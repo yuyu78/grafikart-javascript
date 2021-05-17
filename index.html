@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script>
-        var classA = [{
+        /*var classA = [{
         nom: 'Marc',
         moyenne : 15
         },
@@ -50,7 +50,44 @@
             }
 
             afficheQuiALaMoyenne(classA)
-            afficheQuiALaMoyenne(classB)
+            afficheQuiALaMoyenne(classB)*/
+
+        var eleve1 = {
+            nom: "Jean",
+            notes : [15, 16, 18]
+        }
+
+        var eleve2 = {
+            nom: "Marc",
+            notes : [5, 18, 20]
+        }
+        
+        var moyenne = function (notes) {
+            var somme = 0;
+            for(var i= 0; i<notes.length; i++){
+                somme += notes[i];
+            }
+            return somme/notes.length;
+        }
+
+        console.log(moyenne(eleve1.notes));
+
+        var estMeilleur = function(a, b) {
+            if (moyenne(a.notes) > moyenne(b.notes)) {
+                console.log(a.nom + ' est meilleur que ' + b.nom)
+            }else {
+                console.log(b.nom + ' est meilleur que ' + a.nom)
+            }
+        }
+
+        console.log(estMeilleur(eleve1,eleve2));
+       /* function estMeilleur(eleve1, eleve2) {
+            if (moyenne(eleve1) > moyenne(eleve2)) {
+                console.log(eleve1.nom + ' est meilleur que ' + eleve2.nom)
+            } else {
+                console.log(eleve2.nom + ' est meilleur que ' + eleve1.nom)
+            }
+        }*/
     </script>
 </head>
 
