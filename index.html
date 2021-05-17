@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var classA = [{
+        nom: 'Marc',
+        moyenne : 15
+        },
+        {
+        nom: 'Marion',
+        moyenne : 8
+        },
+        {
+        nom: 'Antoine',
+        moyenne : 4
+        },
+        {
+        nom: 'Jean',
+        moyenne : 14
+        }]
+
+        var classB = [{
+        nom: 'Sebastien',
+        moyenne : 8
+        },
+        {
+        nom: 'Marine',
+        moyenne : 6
+        },
+        {
+        nom: 'Pedro',
+        moyenne : 14
+        },
+        {
+        nom: 'Violette',
+        moyenne : 14
+        }]
+
+        function afficheQuiALaMoyenne(eleves){
+        for (var i = 0; i < eleves.length; i++){
+            var eleve=eleves[i]
+            if (eleve.moyenne>=10){
+            console.log(eleve.nom + " a la moyenne");
+            }
+            }
+            }
+
+            afficheQuiALaMoyenne(classA)
+            afficheQuiALaMoyenne(classB)
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
